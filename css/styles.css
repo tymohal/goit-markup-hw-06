@@ -131,6 +131,7 @@ ul {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .site-nav {
@@ -330,6 +331,102 @@ ul {
   background: var(--accent-text-color);
 }
 
+.modal-info{
+  
+
+  width: 448px;
+  height: 342px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 0;
+}
+
+.modal-info-header{
+  text-align: center;
+
+  margin-top:40px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: var(--main-font);
+  color: var(--title-text-color);   
+
+}
+
+.form-vield{
+margin-bottom: 10px;
+
+}
+
+.form-label{
+  padding-bottom: 4px;
+  
+ 
+  font-size: 12px;
+  font-weight: 400;
+  font-family: var(--primary-text-color);
+}
+
+.form-input{
+  display: block;
+
+  width: 448px;
+  height: 40px;
+ 
+  padding: 0;
+  border-radius: 4px;
+  box-sizing: border-box;
+  border-color: var(--primary-text-color);
+  border: 1px solid rgba(33, 33, 33, 0.2)
+
+}
+
+textarea{
+  resize: none;
+  border-color: var(--primary-text-color);
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  width: 448px;
+  height: 120px;
+  
+
+}
+
+
+
+
+.form-button{
+display: flex;
+justify-content: center;
+align-items: center;
+text-decoration: none;
+padding: 0;
+margin: 0;
+
+
+}
+
+.form-label{
+  margin-bottom: 0;
+}
+.form-label{
+  display: block;
+  
+}
+
+.policy-text{
+  text-decoration: none;
+  color: var(--primary-text-color);
+  font-size: 12px;
+  font-family: var(--main-font);
+  font-weight: 400;
+
+}
+
+
+
+
 .hero-title {
   color: var(--second-accent-text-color);
   font-size: 44px;
@@ -373,6 +470,7 @@ ul {
   height: 50px;
   margin: 0 auto;
   display: flex;
+   
 }
 
 .button.primary {
@@ -390,9 +488,10 @@ ul {
   border-radius: 4px;
   padding: 6px 22px;
   border: 0;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
   cursor: pointer;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+
+
 }
 
 .button.secondary {
@@ -408,6 +507,8 @@ ul {
   border-radius: 4px;
   padding: 6px 22px;
   cursor: pointer;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 .button.secondary:hover,
 .button.secondary:focus {
@@ -417,19 +518,10 @@ ul {
 
 .ibutton:hover,
 .ibutton:focus {
+  border-radius: 4px;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+  0px 2px 2px rgba(0, 0, 0, 0.12);
 }
-
-/*.portfolio-buttons-list {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
-  margin-bottom: 50px;
-  transition: all;
-}*/
 
 .ibutton:not(:last-child) {
   margin-right: 8px;
@@ -476,8 +568,8 @@ ul {
   padding: 63px 24px;
   opacity: 0;
   margin: 0;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),fill 250ms cubic-bezier(0.4, 0, 0.2, 1), 
-  background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+  
 }
 
 .item-icon {
@@ -565,9 +657,10 @@ ul {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.clients-link:hover {
+.clients-link:hover,
+.clients-link:focus {
   fill: var(--buttons-bg-color);
   border: 1px solid var(--buttons-bg-color);
 }
@@ -639,6 +732,7 @@ ul {
   cursor: pointer;
   fill: var(--border-color);
   border-radius: 50%;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 .icon-instagram,
@@ -742,6 +836,7 @@ ul {
   text-decoration: none;
   font-style: normal;
   display: block;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 .address-link:not(:last-child) {
@@ -775,6 +870,7 @@ ul {
   padding: 0;
   margin-left: 70px;
   margin-top: 20px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 .footer-socials-item {
@@ -795,6 +891,54 @@ ul {
   cursor: pointer;
   background-color: rgba(255, 255, 255, 0.1);
   transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-subscribe{
+  
+}
+
+.footer-item{
+  display: flex;
+  
+  align-items: baseline;
+  text-decoration: none;
+  text-transform: uppercase;
+ 
+  
+}
+
+.subscribe-field{
+  
+}
+
+.form-input{
+  width: 358px;
+  height: 50px;
+  margin-right: 12px;
+  background-color: var(--second-bg-color);
+  border: 1px solid var(--primary-text-color) ;
+}
+
+
+
+
+.footer-button{
+  color: var(--second-accent-text-color);
+  background-color: var(--buttons-bg-color);
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  display: inline-block;
+  align-items: center;
+  letter-spacing: 0.06em;
+  border-radius: 4px;
+  padding: 10px 32px;
+  border: 0;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  height: 50px;
+  margin: 0 auto;
+  display: flex;
 }
 
 img {
@@ -879,8 +1023,7 @@ img {
   position: relative;
   width: 370px;
   text-decoration: none;
-  /*box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);*/
+ 
 }
 
 .portfolio-part:hover,
