@@ -336,12 +336,13 @@ ul {
   height: 342px;
   margin-left: auto;
   margin-right: auto;
+  padding: 0;
 }
 
 .modal-info-header {
   font-weight: bold;
   font-size: 20px;
-  line-height: 1, 15;
+  line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
@@ -400,10 +401,10 @@ ul {
 
 .textarea {
   resize: none;
-  width: 100%;
-  border: 1px solid rgba(33, 33, 33, 0.2);
+  border: 1px solid var(--border-color);
   box-sizing: border-box;
   border-radius: 4px;
+  padding: 0;
 }
 
 .footer-mailing {
