@@ -448,7 +448,7 @@ ul {
 .inputs-form-comment {
   resize: none;
   width: 448px;
-  padding: 12px 16px;
+  /*padding: 12px 16px;*/
   font-size: 14px;
   line-height: 1.17;
   letter-spacing: 0.01em;
