@@ -334,6 +334,7 @@ ul {
 
 .inputs-text {
   margin-top: 4px;
+
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -354,6 +355,7 @@ ul {
   position: relative;
   text-align: left;
   margin-bottom: 20px;
+
   padding: 0;
 }
 
@@ -370,9 +372,9 @@ ul {
   outline: none;
 }
 
-.form-vield textarea::placeholder {
+/*.form-vield textarea::placeholder {
   color: rgba(117, 117, 117, 0.5);
-}
+}*/
 
 .form-input {
   display: block;
@@ -381,7 +383,7 @@ ul {
   padding: 0;
   border-radius: 4px;
   box-sizing: border-box;
-  border-color: var(--primary-text-color);
+
   border: 1px solid rgba(33, 33, 33, 0.2);
 }
 
@@ -399,6 +401,7 @@ ul {
 
 .textarea {
   resize: none;
+  width: auto;
   border: 1px solid var(--border-color);
   box-sizing: border-box;
   border-radius: 4px;
@@ -443,6 +446,8 @@ ul {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .inputs-form-comment {
+  resize: none;
+  width: 448px;
   padding: 12px 16px;
   font-size: 14px;
   line-height: 1.17;
@@ -451,6 +456,7 @@ ul {
   font-family: var(--main-font);
   font-style: regular;
   align-items: Left;
+  border-color: 1px solid var(--primary-text-color);
 }
 
 .form-vield:focus-within > .inputs-form-comment {
@@ -987,7 +993,7 @@ ul {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  fill: var(--border-color);
+  fill: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1018,6 +1024,7 @@ ul {
   border: 1px solid var(--primary-text-color);
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  color: #ffffff;
 }
 
 .footer-button:hover,
