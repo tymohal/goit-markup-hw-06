@@ -366,9 +366,9 @@ ul {
   outline: none;
 }
 
-/*.form-vield textarea::placeholder {
+.form-vield textarea::placeholder {
   color: rgba(117, 117, 117, 0.5);
-}*/
+}
 
 .form-input {
   display: block;
